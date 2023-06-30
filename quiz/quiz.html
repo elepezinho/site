@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1493186259985891"
+     crossorigin="anonymous"></script>
+		<link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png" type="image/png">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CLUB GEEK BRASIL | QUIZ</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #1b1b1b;
+                color: #333;
+            }
+
+            header {
+                background-color: #333;
+                color: #fff;
+                padding: 20px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                margin: 0;
+                font-size: 32px;
+            }
+			
+			h2 {
+				margin: 0;
+                line-height: .5;
+            }
+
+            .carousel {
+                max-width: 800px;
+                margin: 30px auto 30px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .carousel .slide {
+                display: none;
+            }
+
+            .carousel .slide.active {
+                display: block;
+            }
+
+            .carousel img {
+                width: 100%;
+                cursor: pointer;
+            }
+			
+			 .brand-logo {
+    /* Estilos personalizados para o logo */
+    display: inline-block;
+    width: 100px; /* Ajuste a largura conforme necessário */
+    height: 60px; /* Ajuste a altura conforme necessário */
+    background-image: url(https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png); /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+  }
+  
+  .material{
+	display: inline-block;
+	background-image: url(https://media.discordapp.net/attachments/978050756630433792/1120445193301274695/-menu_89847.png); /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
+	width: 45px; /* Ajuste a largura conforme necessário */
+	height: 50px; /* Ajuste a altura conforme necessário */
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+  }
+
+            .carousel .prev,
+            .carousel .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 30px;
+                font-weight: bold;
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 10px;
+                cursor: pointer;
+            }
+
+            .carousel .prev {
+                left: 10px;
+            }
+
+            .carousel .next {
+                right: 10px;
+            }
+
+            .carousel .title {
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+                right: 0;
+                text-align: center;
+                color: #fff;
+                font-size: 18px;
+                font-weight: bold;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 5px;
+                display: none;
+            }
+
+            .post {
+                background-color: #fff;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin-bottom: 30px;
+            }
+
+            .post a {
+                margin: 0;
+                text-decoration: none;
+                color: #333;
+                font-size: 24px;
+                cursor: pointer;
+            }
+
+            .post p {
+                margin-top: 10px;
+                line-height: 1.5;
+            }
+
+            .post .date {
+                color: #999;
+                font-size: 14px;
+            }
+
+            .post .thumbnail img {
+                width: 200px;
+                height: auto;
+                border-radius: 3px;
+                margin-right: 10px;
+                display: inline-block;
+                vertical-align: middle;
+                cursor: pointer;
+            }
+
+            .post-title {
+                text-decoration: none; /* Remove o sublinhado */
+                color: #fff; /* Define a cor do texto do título */
+                /* Adicione outros estilos desejados, como font-weight, font-size, etc. */
+            }
+
+            .read-more {
+                display: inline-block;
+                margin-top: 10px;
+                color: #333;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            #load-more-button {
+                background-color: #333;
+                color: #fff;
+                padding: 10px 20px;
+                font-size: 16px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+
+            #load-more-button:hover {
+                background-color: #555;
+            }
+
+            .custom-navbar {
+                background-color: #333; /* Altere para a cor desejada */
+            }
+			
+        </style>
+    </head>
+    <body>
+	
+	   <script data-ad-client="ca-pub-1493186259985891" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	   
+        <nav class="custom-navbar">
+            <div class="nav-wrapper">
+                <a href="http://geekbrasil.club/" class="brand-logo"></a>
+                <a href="#" data-activates="menu-mobile" class="button-collapse">
+                    <i class="material"></i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="http://geekbrasil.club/">Home</a></li>
+                    <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
+                    <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
+                    <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+                </ul>
+                <ul class="side-nav" id="menu-mobile">
+                    <li><a href="http://geekbrasil.club/">Home</a></li>
+                    <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
+                    <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
+                    <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+                </ul>
+            </div>
+        </nav>
+		
+		  <li style="display: none;"><center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Amazon01 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-1493186259985891"
+data-ad-slot="4122947454"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></li>
+
+			
+			<li style="display: none;"><center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Amazon01 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-1493186259985891"
+data-ad-slot="4122947454"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></li>
+			
+        <div id="postContainer"></div>
+        <button id="load-more-button">Carregar mais posts</button>
+        <div id="loadMoreContainer"></div>
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+        <script>
+            $(function () {
+                $(".button-collapse").sideNav();
+            });
+        </script>
+
+        <script>
+            // Código para carregar apenas 10 posts por vez
+            var posts = [
+				{
+    title: "QUIZ - QUEM É O MAIS VELHO EM BLACK CLOVER?",
+    date: "02/06/2022",
+    thumbnail: "https://upload.wikimedia.org/wikipedia/en/1/1b/Black_Clover_characters.png",
+    content: "Consegue adivinhar qual personagem em Black Clover é o mais velho?..."
+},
+                {
+    title: "QUIZ - QUEM É O MAIS VELHO EM NARUTO?",
+    date: "28/05/2022",
+    thumbnail: "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/04/naruto-worldwide-popularity-poll-results.jpg",
+    content: "Consegue adivinhar qual personagem em Naruto é o mais velho?..."
+},
+				{
+    title: "QUIZ - QUAL PERSONAGEM DE BLACK CLOVER VOCÊ É??",
+    date: "15/05/2022",
+    thumbnail: "https://staticg.sportskeeda.com/editor/2022/10/947eb-16667373899790-1920.jpg",
+    content: "Qual personagem de Black Clover você seria?..."
+},
+                {
+    title: "QUAL SERIA SUA AKUMA NO MI EM ONE PIECE?",
+    date: "02/05/2022",
+    thumbnail: "https://www.einerd.com.br/wp-content/uploads/2020/05/Akuma-no-Mi-One-Piece-2.jpg",
+    content: "Qual seria sua akuma no mi no anime de One Piece?"
+},
+                {
+    title: "SERÁ QUE VOCÊ REALMENTE ENTENDE DE BLACK CLOVER??",
+    date: "28/04/2022",
+    thumbnail: "https://i.pinimg.com/originals/9e/65/34/9e6534b103785acba30f80b24f7e3e86.jpg",
+    content: "Você manja mesmo do universo de Black Clover?... Se sim, responde aí!"
+},
+                {
+    title: "QUIZ - DESCUBRA QUAL SERIA SEU GRIMÓRIO EM BLACK CLOVER!!!",
+    date: "15/04/2022",
+    thumbnail: "https://pm1.aminoapps.com/7597/9f02cbf9188b4ef895cd2b59099409c4d5a244a8r1-1041-739v2_uhq.jpg",
+    content: "Qual seria seu grimório no mundo de Black Clover?.."
+},
+                {
+    title: "QUIZ - DESCUBRA A MAGIA QUE VOCÊ TEM EM BLACK CLOVER",
+    date: "02/04/2022",
+    thumbnail: "https://staticg.sportskeeda.com/editor/2022/10/dcc58-16660903117215-1920.jpg",
+    content: "Qual a magia você possui no anime de Black Clover?.."
+},
+                {
+    title: "QUIZ - QUAL SERIA SUA RESPIRAÇÃO EM KIMETSU NO YAIBA?",
+    date: "28/03/2022",
+    thumbnail: "https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/08/kamado-tanjiro-water-and-sun-breathing-from-demon-slayer.jpg",
+    content: "Vem descobrir qual é a sua respiração no anime de Kimetsu no Yaiba..."
+},
+                {
+    title: "QUIZ - QUAL INVOCAÇÃO DO JIN WOO É VOCÊ EM SOLO LEVELING?",
+    date: "15/03/2022",
+    thumbnail: "https://cdnb.artstation.com/p/assets/images/images/032/247/071/large/mehdi-bahloul-solodisp.jpg",
+    content: "Se o Jin Woo disser Erga-se, quem será você?..."
+},
+                {
+    title: "QUIZ - QUEM É VOCÊ NO ESQUADRÃO 104 EM SHINGEKI?",
+    date: "02/03/2022",
+    thumbnail: "https://i.pinimg.com/originals/8d/2f/a0/8d2fa0ca382f1550e39f56206f2a2b49.jpg",
+    content: "Quem é você no esquadrão de recrutas da formação de Eren Yeager..."
+},
+                {
+    title: "QUIZ - QUEM É VOCÊ NO TIME 7 EM NARUTO?",
+    date: "28/02/2022",
+    thumbnail: "https://pm1.aminoapps.com/7149/8ed78751cd837ace94727faddfb71f21d197e147r1-1650-2000v2_uhq.jpg",
+    content: "Consegue descobrir quem é você no time 7 do anime de Naruto..."
+},
+                {
+    title: "QUIZ - ESSE PERSONAGEM DE SHINGEKI NO KYOJIN JÁ FOI UM TITÃ NO ANIME?",
+    date: "15/02/2022",
+    thumbnail: "https://1.bp.blogspot.com/-SVwmEOKXNK4/YJ_70kZfJGI/AAAAAAAA5ME/SWI6I7rfyGgQb8iWF3aeV9APyCptCqF5ACLcBGAsYHQ/s900/Rankeando%2Bos%2BNove%2BTit%25C3%25A3s%2Bde%2BShingeki%2Bno%2BKyojin.jpg",
+    content: "Será que você consegue adivinhar qual desses personagens já foi um titã no anime de Shingeki no Kyojin..."
+},
+                {
+    title: "QUIZ - QUAL HASHIRA DE KIMETSU NO YAIBA É VOCÊ?",
+    date: "01/02/2022",
+    thumbnail: "data:image/jpeg;base64,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",
+    content: "Veja qual Hashira você é no mangá de Kimetsu No Yaiba nesse quiz fantástico..."
+},
+                // Adicione mais posts aqui...
+            ];
+
+            var postContainer = document.getElementById("postContainer");
+            var loadMoreContainer = document.getElementById("loadMoreContainer");
+            var currentPostIndex = 0;
+            var postsPerPage = 10;
+
+            function renderPosts() {
+                var startIndex = posts.length - 1 - currentPostIndex;
+
+                for (var i = currentPostIndex; i < currentPostIndex + postsPerPage && i < posts.length; i++) {
+                    var post = posts[i];
+                    var postElement = document.createElement("div");
+                    postElement.classList.add("post");
+
+                    var titleElement = document.createElement("h2");
+                    var titleLink = document.createElement("a");
+                    titleLink.href = "post.html-id=" + (startIndex - i) + ".html"; // Adicione o parâmetro de id ao URL da página do post
+                    titleLink.textContent = post.title;
+                    titleElement.appendChild(titleLink);
+                    postElement.appendChild(titleElement);
+
+                    var dateElement = document.createElement("p");
+                    dateElement.classList.add("date");
+                    dateElement.textContent = "Publicado em " + post.date;
+                    postElement.appendChild(dateElement);
+
+                    var thumbnailElement = document.createElement("div");
+                    thumbnailElement.classList.add("thumbnail");
+                    var thumbnailLink = document.createElement("a");
+                    thumbnailLink.href = "post.html-id=" + (startIndex - i) + ".html"; // Adicione o parâmetro de id ao URL da página do post
+                    var thumbnailImage = document.createElement("img");
+                    thumbnailImage.src = post.thumbnail;
+                    thumbnailImage.alt = "Miniatura";
+                    thumbnailLink.appendChild(thumbnailImage);
+                    thumbnailElement.appendChild(thumbnailLink);
+                    postElement.appendChild(thumbnailElement);
+
+                    var contentElement = document.createElement("p");
+                    contentElement.textContent = post.content;
+                    postElement.appendChild(contentElement);
+
+                    var readMoreLink = document.createElement("a");
+                    readMoreLink.classList.add("read-more");
+                    readMoreLink.href = "post.html-id=" + (startIndex - i) + ".html"; // Adicione o parâmetro de id ao URL da página do post
+                    readMoreLink.textContent = "Leia mais";
+                    postElement.appendChild(readMoreLink);
+
+                    postContainer.appendChild(postElement);
+                }
+				
+            }
+
+            function loadMorePosts() {
+                currentPostIndex += postsPerPage;
+                renderPosts();
+            }
+
+            renderPosts();
+
+            var loadMoreButton = document.getElementById("load-more-button");
+            loadMoreButton.addEventListener("click", loadMorePosts);
+
+            function loadMorePosts() {
+                currentPostIndex += postsPerPage;
+                renderPosts();
+
+                if (currentPostIndex >= posts.length) {
+                    loadMoreButton.style.display = "none"; // Esconde o botão quando todos os posts foram carregados
+                }
+            }
+        </script>
+		  
+<li style="display: none;"><center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Amazon01 -->
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-1493186259985891"
+data-ad-slot="4122947454"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center></li>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCwu0bmTUPKqe4gCrcahlzDeMAw0E_X7Xs",
+    authDomain: "clubgeekbrasil-76840.firebaseapp.com",
+    projectId: "clubgeekbrasil-76840",
+    storageBucket: "clubgeekbrasil-76840.appspot.com",
+    messagingSenderId: "486124051009",
+    appId: "1:486124051009:web:9aff154ad79a8ec0a944c0",
+    measurementId: "G-GHFWNYXHB9"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHFWNYXHB9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GHFWNYXHB9');
+</script>
+
+    </body>
+</html>

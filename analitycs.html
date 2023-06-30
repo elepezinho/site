@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de exibição de dados do Firebase Analytics</title>
+  <!-- Inclua o SDK do Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-database.js"></script>
+</head>
+<body>
+  <h1>Dados do Firebase Analytics</h1>
+  <ul id="analyticsList"></ul>
+
+  <script>
+    // Your web app's Firebase configuration
+	const firebaseConfig = {
+    apiKey: "AIzaSyCwu0bmTUPKqe4gCrcahlzDeMAw0E_X7Xs",
+    authDomain: "clubgeekbrasil-76840.firebaseapp.com",
+	databaseURL: "https://clubgeekbrasil-76840-default-rtdb.firebaseio.com/",
+    projectId: "clubgeekbrasil-76840",
+    storageBucket: "clubgeekbrasil-76840.appspot.com",
+    messagingSenderId: "486124051009",
+    appId: "1:486124051009:web:9aff154ad79a8ec0a944c0",
+    measurementId: "G-GHFWNYXHB9"
+  };
+  
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+    // Referência ao nó dos dados do Firebase Analytics
+    var analyticsRef = firebase.database().ref('analytics/pageViews');
+
+    // Leitura dos dados do Firebase Analytics
+    analyticsRef.once('value', function(snapshot) {
+      var analyticsData = snapshot.val();
+      exibirDados(analyticsData);
+    }, function(error) {
+      console.log(error);
+    });
+
+    // Função para exibir os dados na página
+    function exibirDados(analyticsData) {
+      var analyticsList = document.getElementById('analyticsList');
+      analyticsList.innerHTML = '';
+
+      Object.keys(analyticsData).forEach(function(page) {
+        var views = analyticsData[page];
+        var listItem = document.createElement('li');
+        listItem.textContent = page + ': ' + views + ' views';
+        analyticsList.appendChild(listItem);
+      });
+    }
+  </script>
+</body>
+</html>

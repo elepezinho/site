@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1493186259985891" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLUB GEEK BRASIL | MANGÁS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1b1b1b;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        h2 {
+            margin: 0;
+            line-height: .5;
+        }
+
+        .carousel {
+            max-width: 800px;
+            margin: 30px auto 30px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel .slide {
+            display: none;
+        }
+
+        .carousel .slide.active {
+            display: block;
+        }
+
+        .carousel img {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .carousel .prev,
+        .carousel .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 30px;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel .prev {
+            left: 10px;
+        }
+
+        .carousel .next {
+            right: 10px;
+        }
+
+        .carousel .title {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 5px;
+            display: none;
+        }
+
+        .post {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .post a {
+            margin: 0;
+            text-decoration: none;
+            color: #333;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .post p {
+            margin-top: 10px;
+            line-height: 1.5;
+        }
+
+        .post .date {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .post .thumbnail img {
+            width: 200px;
+            height: auto;
+            border-radius: 3px;
+            margin-right: 10px;
+            display: inline-block;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .post-title {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #load-more-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #load-more-button:hover {
+            background-color: #555;
+        }
+
+        .custom-navbar {
+            background-color: #333;
+        }
+
+        .brand-logo {
+            display: inline-block;
+            width: 100px;
+            height: 60px;
+            background-image: url(https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-decoration: none;
+        }
+
+        .material {
+            display: inline-block;
+            background-image: url(https://media.discordapp.net/attachments/978050756630433792/1120445193301274695/-menu_89847.png);
+            width: 45px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            text-decoration: none;
+        }
+		
+		.image-container {
+		margin: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container a {
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<script data-ad-client="ca-pub-1493186259985891" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<nav class="custom-navbar">
+    <div class="nav-wrapper">
+        <a href="http://geekbrasil.club/" class="brand-logo"></a>
+        <a href="#" data-activates="menu-mobile" class="button-collapse">
+            <i class="material"></i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+                    <li><a href="http://geekbrasil.club/">Home</a></li>
+                    <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
+                    <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
+                    <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+                </ul>
+                <ul class="side-nav" id="menu-mobile">
+                    <li><a href="http://geekbrasil.club/">Home</a></li>
+                    <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
+                    <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
+                    <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+                </ul>
+    </div>
+</nav>
+
+<div class="image-container">
+        <a href="black-clover/black-clover.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO6eLhQ23LgmN21espWby60kLkUvOBpzEEbUIjwqooXngqG3CZw0IhUnQ3Ge2cU6aXswZ7KVyxHm6EMUvPNnDmswvGSAHqwyA5xLp1DpEWOWVHji9o9D3oo_zt_QBwEkfWVzdacV5a465vIwnyLWoEshe-BEKCIHT_Dn99lMlkT1OvE2g9MaYBRAv1/w640-h124/site-bc.jpg" alt="Black Clover"></a>
+        <a href="bleach/bleach.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglmOIRN6b17xjrL27Uzh9ACT0IXvbEC9zeIJl0JMxXwmBg3qZPuazw9jDMkkPhEkyLa9BGcNcvDgU7GLhXmI6SlHFIu8XplawTtNppuXXIBkUCIPWV91qJZk9z4aLrLoE7FkicjZKWFfaPaQchsi6sdBCGuQn_PdwGBgHH0qNhpe9aYry8PRwfj7xT/w640-h124/site-blc.jpg" alt="Bleach"></a>
+        <a href="boku-no-hero/boku-no-hero.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHh5zqN-db_n9VYPzpZbhUgz5KZ6xTISFkigueF02F3gVJqmCgAmecw-HcM5fQZrqB5La9DDpbKP1SzpQgEQNnvPd1NIfO5h7Tb1O9tnq7A8IJoOiM7R_VNg39euLz3E_HpFEoM3i3rdsHOgbMT8XCR52kxAd9n3sxD9dk3et76AC9mDVASBG-2mIo/w640-h124/site-bnh.jpg" alt="Boku no Hero"></a>
+        <a href="chainsaw-man/chainsaw-man.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKZ7wPzKx_D1MYgA0YmSo8Ie6RNTsW4UEjFRyJqrNcgXaPJhNAafJskx3QiuI2m0582PmIurFATor2fefF_jYV6IT0wjlC2JynhO8Vbr6azdQWEd8ITxPvirIzkW4b8gP6_I0ssQjOtjaC-tEiWHYhHSD8fV_ApeGy531AE8veYXSLkeJrGkQo_1yo/w640-h124/site-ds.jpg" alt="Chainsaw Man"></a>
+        <a href="demon-slayer/demon-slayer.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbA3MVcNYWoBMbVwZYn9pkls3eZmwsoLaZIOmoyjLx1qblQmd_mlqFpP0eUtEPedrp826pUlPF8aXIimVHBPAF_K6qt8I0frfEU1DzLndCu91f1X5he2eK9wbQOJ73IACcI41B7Nn-LC1LZGAXGlDanbVLgZhXLgAHdW9ujrxdLnVRzlQvBQ1ceuFG/w640-h124/site-hxh.jpg" alt="Demon Slayer"></a>
+        <a href="hunter-x-hunter/hunter-x-hunter.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkWVQAJEvKSqLQ22BslWWadwjRxDTseZfe8UeJ7kEMUkavO5UHYUZnwOZ-voj4UA8jFhgW-qcZV2PI57pegCBGfEsdW5zkUqmpcje6S_syMQXrMYwVH9J8TfLR2_VEZgpTw1Y6yoX0jNRaddgMyiqL0IGl_9JXkoTGXP2pWaMeFmygh5L6tp2nyvyT/w640-h124/site-jjk.jpg" alt="Hunter x Hunter"></a>
+        <a href="naruto-e-boruto/naruto-e-boruto.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-uOda32G7dgQhf8CGTqJzzG90Ssr7uEXxkUk3nkDdikuxe-9SoCEkrJ-sxlucTuR_x6p2-E0cqbunDrcBpsMth-JrXyE3Xxjs3jCbdzXxEF5-i0GqZnN1YfHVaPvY_GuJY89irXsN6x4EYkB207RKopn9mkC14X-v1MN3UlYqvQrKbkINC1UnbmPa/w640-h124/site-nrt.jpg" alt="Naruto e Boruto"></a>
+        <a href="one-piece/one-piece.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR6QAzZd4kGrpl7HuFB8LYZ1TkPnarrWoafjWrxutKVitVwyCs9X2yWCB0W2Ar_fI_XmDuglzSO5imCKXplYJE_sIw1AfVBclHnk4TORbM-T6hYgLIgYNcPfOykFvzUqYg6jLMYoBonfeve7gmOc6W5gEeh6YNtk5u0H0GMASTFn0Llfd_kROKQs2t/w640-h124/site-op.jpg" alt="One Piece"></a>
+        <a href="one-punch-man/one-punch-man.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3bDSJwZAHcfuBVjmvaFROgmjmExeSZk36CgwI1bIdQKdxrkyF1S3sWcSZCK4gKtxCrW6RoTg-Wt-iszp3jWrxDqHoRo_BF9vpL3oVEf-eZELeaUWMJAtXc1AA4VWj3ZnnyucDe_uLteq5ZPACtc-VWS0ZDhGVE3Fv_0vbSW4UqDNg9_el-PzVQmWc/w640-h124/site-opm.jpg" alt="One Punch Man"></a>
+        <a href="shuumatsu-no-valkyrie/shuumatsu-no-valkyrie.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNfR7k5QRGdpS_QKgPEm8sWIHodV_RETdDxWUFOxYLTB8kq9uzOYGjWbKcn3QldG7m7CGTgKtbpBrZv5aAgkj3eFLnGQA4fEZc0wc66RcHN8y_XFgJrNj0aUzcDhKgzYxowaDAEU2qgmyHHhF117eHZ1UvmIzhVaUqb8fvIqrNv5lkB4htmCUl0t0z/w640-h124/site-snv.jpg" alt="Shuumatsu no Valkyrie"></a>
+    </div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+<script>
+    $(function () {
+        $(".button-collapse").sideNav();
+    });
+</script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+        apiKey: "AIzaSyCwu0bmTUPKqe4gCrcahlzDeMAw0E_X7Xs",
+        authDomain: "clubgeekbrasil-76840.firebaseapp.com",
+        projectId: "clubgeekbrasil-76840",
+        storageBucket: "clubgeekbrasil-76840.appspot.com",
+        messagingSenderId: "486124051009",
+        appId: "1:486124051009:web:9aff154ad79a8ec0a944c0",
+        measurementId: "G-GHFWNYXHB9"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHFWNYXHB9"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GHFWNYXHB9');
+</script>
+
+</body>
+</html>
