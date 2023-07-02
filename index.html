@@ -258,6 +258,16 @@ data-full-width-responsive="true"></ins>
         <div class="carousel">
 		
 		<div class="slide active">
+<a href="https://geekbrasil.club/post.html-id=23.html"><img src="https://areajugones.sport.es/wp-content/uploads/2021/10/jujutsu-kaisen-0-rika.jpg" alt="Imagem 3" /></a>
+<div class="title">FICHA DA RIKA GUIA OFICIAL DE JUJUTSU KAISEN</div>
+</div>
+		
+		<div class="slide">
+<a href="https://geekbrasil.club/post.html-id=22.html"><img src="https://cdn.discordapp.com/attachments/978050756630433792/1125065331736596530/Captura_de_tela_20230702_150709.png" alt="Imagem 3" /></a>
+<div class="title">FICHA DO KUSAKABE E DETALHES SOBRE DOMÍNIO SIMPLES, AMPLIFICAÇÃO E EMOÇÃO DA PÉTALA DECADENTE.</div>
+</div>
+		
+		<div class="slide">
 <a href="https://geekbrasil.club/post.html-id=21.html"><img src="https://cdn.discordapp.com/attachments/978050756630433792/1124373498672975892/d4c5c139fef3287280209e85b1f94ea9935205cbr1-2048-1152v2_uhq.png" alt="Imagem 3" /></a>
 <div class="title">FICHA COMPLETA DO TOKOYAMI!!! - BLOCO DE NOTAS DO DEKU!!!</div>
 </div>
@@ -270,15 +280,6 @@ data-full-width-responsive="true"></ins>
 		<div class="slide">
 <a href="https://geekbrasil.club/post.html-id=19.html"><img src="https://vignette.wikia.nocookie.net/hunterxhunter/images/7/79/Gyro_getting_beaten.png" alt="Imagem 3" /></a>
 <div class="title">FICHA DO GYRO - GUIA HUNTER X HUNTER</div>
-</div>
-
-		<div class="slide">
-<a href="https://clubgeekbrasil-76840.web.app/post.html-id=18.html"><img src="https://staticg.sportskeeda.com/editor/2022/05/21f44-16520468134108-1920.jpg" alt="Imagem 3" /></a>
-<div class="title">POR QUE A EXPANSÃO DO HAKARI É A MAIS RÁPIDA DE JUJUTSU KAISEN?</div>
-</div>
-            <div class="slide ">
-<a href="https://geekbrasil.club/post.html-id=17.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_YyboSptbIedFNhIUJZELIrkNbPvWRdpIWynVoqDBVIc2e-UfNBdVHF9oinexEQ5VnWWGvpiC1-Qn4URAkvfPfqnvFxE50mwTXEcFLV0EzToJHHUeaPW3UcK3xu5tpFtn5vq8tvFDjz9CdkaqtEZbzlVhX191TmEjEKriWrWIbddTa67OJVIyvYPZ/w285-h400/ykpmp2s2h8pa1.jpg" alt="Imagem 3" /></a>
-<div class="title">CAPÍTULO 01 E 02 DA NOVEL DO FILME DE BLACK CLOVER.</div>
 </div>
 			
 			<li style="display: none;"><center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -348,10 +349,39 @@ data-full-width-responsive="true"></ins>
     var title = slide.querySelector(".title");
     title.style.display = "block";
   }
-			
+  
+   //Reprodução automatica do carousel
+        function autoPlaySlide() {
+            showNextSlide();
+        }
 
+        var slideInterval = setInterval(autoPlaySlide, 3000); // Altere o valor '3000' para definir o tempo entre os slides
+
+        // Pause a reprodução ao colocar o mouse em cima do carousel
+        var carousel = document.querySelector(".carousel");
+        carousel.addEventListener("mouseover", function () {
+            clearInterval(slideInterval);
+        });
+
+        //Retorne a repodução ao retirar o mouse de cima do carousel
+        carousel.addEventListener("mouseout", function () {
+            slideInterval = setInterval(autoPlaySlide, 3000); // Altere o valor '3000' para definir o tempo entre os slides
+        });
+  
             // Código para carregar apenas 10 posts por vez
             var posts = [
+			{
+    title: "FICHA DA RIKA GUIA OFICIAL DE JUJUTSU KAISEN",
+    date: "02/07/2023",
+    thumbnail: "https://areajugones.sport.es/wp-content/uploads/2021/10/jujutsu-kaisen-0-rika.jpg",
+    content: "Veja a ficha completa de Rika Orimoto do guia oficial do mangá de Jujutsu Kaisen..."
+},
+			{
+    title: "FICHA DO KUSAKABE E DETALHES SOBRE DOMÍNIO SIMPLES, AMPLIFICAÇÃO E EMOÇÃO DA PÉTALA DECADENTE.",
+    date: "02/07/2023",
+    thumbnail: "https://staticc.sportskeeda.com/editor/2023/05/6faf5-16841821614320-1920.jpg",
+    content: "Conheça a ficha do Kusakabe no guia oficial de Jujutsu Kaisen e todos os detalhes do domínio simples e amplificado e da emoção da pétala decadente..."
+},
 			{
     title: "FICHA COMPLETA DO TOKOYAMI!!! - BLOCO DE NOTAS DO DEKU!!!",
     date: "30/06/2023",
