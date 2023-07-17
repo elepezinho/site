@@ -20,8 +20,22 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 20px;
-            background-color: #1b1b1b;
             color: #333;
+            background-image: url('https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .background-link {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            z-index: -1;
         }
 
         header {
@@ -47,6 +61,11 @@
             margin: 30px auto 30px;
             overflow: hidden;
             position: relative;
+        }
+
+        .carousel-container {
+            position: relative;
+            z-index: 1;
         }
 
         .carousel .slide {
@@ -257,6 +276,44 @@
 </head>
 
 <body>
+    <script>
+        function changeBackground() {
+            var images = [
+                "https://cdn.discordapp.com/attachments/978050756630433792/1130624743045865632/wp-funko.jpg",
+                "https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg",
+                "https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg",
+                "https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg",
+                "https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg"
+            ];
+
+            var randomIndex = Math.floor(Math.random() * images.length);
+            var selectedImage = images[randomIndex];
+
+            document.body.style.backgroundImage = "url('" + selectedImage + "')";
+        }
+    </script>
+
+    <a href="https://www.site1.com" class="background-link"></a>
+
+    <div onclick="location.href='https://www.site1.com';" style="cursor:pointer;">
+    </div>
+
+    <div onclick="location.href='https://www.site2.com';" style="cursor:pointer;">
+    </div>
+
+    <div onclick="location.href='https://www.site3.com';" style="cursor:pointer;">
+    </div>
+
+    <div onclick="location.href='https://www.site4.com';" style="cursor:pointer;">
+    </div>
+
+    <div onclick="location.href='https://www.site5.com';" style="cursor:pointer;">
+    </div>
+
+    <script>
+        // Ao carregar a página, chama a função para trocar o background
+        window.onload = changeBackground;
+    </script> 
 
     <script data-ad-client="ca-pub-1493186259985891" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
