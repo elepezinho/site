@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
+    <link type="text/css" rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1493186259985891"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png"
+        type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="../../../script.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLUB GEEK BRASIL | O SEU DATABOOK DE MANGÁS!</title>
+</head>
+
+<body>
+
+    <script data-ad-client="ca-pub-1493186259985891" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <nav class="custom-navbar">
+        <div class="nav-wrapper">
+            <a href="http://geekbrasil.club/" class="brand-logo"></a>
+            <a href="#" data-activates="menu-mobile" class="button-collapse">
+                <i class="material"></i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="http://geekbrasil.club/">Home</a></li>
+                <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
+                <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
+                <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+            </ul>
+            <ul class="side-nav" id="menu-mobile">
+                <li><a href="http://geekbrasil.club/">Home</a></li>
+                <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
+                <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
+                <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <li style="display: none;">
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Amazon01 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1493186259985891"
+                data-ad-slot="4122947454" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+    </li>
+
+    <li style="display: none;">
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Amazon01 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1493186259985891"
+                data-ad-slot="4122947454" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+    </li>
+
+    <div id="postContainer"></div>
+    <button id="load-more-button">Carregar mais posts</button>
+    <div id="loadMoreContainer"></div>
+
+
+    <script>
+
+        // Código para carregar apenas 10 posts por vez
+        var posts = [
+            {
+                title: "FICHA DO GYRO - GUIA HUNTER X HUNTER",
+                date: "29/06/2023",
+                thumbnail: "https://vignette.wikia.nocookie.net/hunterxhunter/images/7/79/Gyro_getting_beaten.png",
+                content: "Conheça a ficha oficial do personagem Gyro, o grande vilão do Gon, no mangá de Hunter x Hunter..."
+            },
+            {
+                title: "FICHAS DO SILVA E ZENO ZOLDYCK - GUIA OFICIAL DE HUNTER X HUNTER",
+                date: "11/04/2023",
+                thumbnail: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhodzVI1jL-4IJxF7iwtTI9LLdVioz6FcccrqETnydnuV-JodaZJBZc6I-sUdCgwbUjTWK4ytWKfdpucdYEi5VVN7ZU2v3IoVFtcdUpBwhywnn5TroVXZNM3mx8zzWcw-8UmmZorAFyHV3_EzIczXCcfnihjFU-MQYvAPAcl4InNAyFmTRDBdLvqSLQ/w576/maxresdefault.jpg",
+                content: "As Fichas completas de Silva e Zeno Zoldyck do guia oficial do mangá de Hunter x Hunter..."
+            },
+            {
+                title: "FICHA DO GON FREECS - GUIA OFICIAL DE HUNTER X HUNTER",
+                date: "11/04/2023",
+                thumbnail: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHRh6UFj238AV93tYTMtuWs7RZNOWSQ0YLgMbjMqVhmqEgc3jawH_ECGIygahZCrnyF4_58-cE_8JxbooOiig_AZRQ77ecxzyIy5-fzXu4sBUWUZo3sivH9ciDawDeQKu4wzvX3Hc3IwtwO220ydFjrPZIjyyZjKwoOeh8kSHPAwEWswmPYSX7NEGJ/w576/gon%2012.png",
+                content: "Ficha completa do Gon do Guia Oficial do mangá de Hunter x Hunter..."
+            },
+            // Adicione mais posts aqui...
+        ];
+
+        var postContainer = document.getElementById("postContainer");
+        var loadMoreContainer = document.getElementById("loadMoreContainer");
+        var currentPostIndex = 0;
+        var postsPerPage = 10;
+
+        function renderPosts() {
+            var startIndex = posts.length - 1 - currentPostIndex;
+
+            for (var i = currentPostIndex; i < currentPostIndex + postsPerPage && i < posts.length; i++) {
+                var post = posts[i];
+                var postElement = document.createElement("div");
+                postElement.classList.add("post");
+
+                var titleElement = document.createElement("h2");
+                var titleLink = document.createElement("a");
+                titleLink.href = "post.html-id=" + (startIndex - i) + ".html"; // Adicione o parâmetro de id ao URL da página do post
+                titleLink.textContent = post.title;
+                titleElement.appendChild(titleLink);
+                postElement.appendChild(titleElement);
+
+                var dateElement = document.createElement("p");
+                dateElement.classList.add("date");
+                dateElement.textContent = "Publicado em " + post.date;
+                postElement.appendChild(dateElement);
+
+                var thumbnailElement = document.createElement("div");
+                thumbnailElement.classList.add("thumbnail");
+                var thumbnailLink = document.createElement("a");
+                thumbnailLink.href = "post.html-id=" + (startIndex - i) + ".html"; // Adicione o parâmetro de id ao URL da página do post
+                var thumbnailImage = document.createElement("img");
+                thumbnailImage.src = post.thumbnail;
+                thumbnailImage.alt = "Miniatura";
+                thumbnailLink.appendChild(thumbnailImage);
+                thumbnailElement.appendChild(thumbnailLink);
+                postElement.appendChild(thumbnailElement);
+
+                var contentElement = document.createElement("p");
+                contentElement.textContent = post.content;
+                postElement.appendChild(contentElement);
+
+                var readMoreLink = document.createElement("a");
+                readMoreLink.classList.add("read-more");
+                readMoreLink.href = "post.html-id=" + (startIndex - i) + ".html"; // Adicione o parâmetro de id ao URL da página do post
+                readMoreLink.textContent = "Leia mais";
+                postElement.appendChild(readMoreLink);
+
+                postContainer.appendChild(postElement);
+            }
+
+        }
+
+        function loadMorePosts() {
+            currentPostIndex += postsPerPage;
+            renderPosts();
+        }
+
+        renderPosts();
+
+        var loadMoreButton = document.getElementById("load-more-button");
+        loadMoreButton.addEventListener("click", loadMorePosts);
+
+        function loadMorePosts() {
+            currentPostIndex += postsPerPage;
+            renderPosts();
+
+            if (currentPostIndex >= posts.length) {
+                loadMoreButton.style.display = "none"; // Esconde o botão quando todos os posts foram carregados
+            }
+        }
+    </script>
+
+    <li style="display: none;">
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Amazon01 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1493186259985891"
+                data-ad-slot="4122947454" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+    </li>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCwu0bmTUPKqe4gCrcahlzDeMAw0E_X7Xs",
+            authDomain: "clubgeekbrasil-76840.firebaseapp.com",
+            projectId: "clubgeekbrasil-76840",
+            storageBucket: "clubgeekbrasil-76840.appspot.com",
+            messagingSenderId: "486124051009",
+            appId: "1:486124051009:web:9aff154ad79a8ec0a944c0",
+            measurementId: "G-GHFWNYXHB9"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHFWNYXHB9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GHFWNYXHB9');
+    </script>
+
+    <div class="container-banner">
+        <a href="https://tapas.io/series/Que-Haja-Luz/info" target="_blank">
+            <img src="https://cdn.discordapp.com/attachments/978050756630433792/1125426126567788654/divulg.jpg" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.youtube.com/channel/UC4d8uyKbO5mYVWitioK0u9g/"><img
+                        src="https://cdn.discordapp.com/attachments/978050756630433792/1124429740443451563/b.png"
+                        alt="Imagem 3" /></a>
+
+                <a target="_blank" href="https://twitter.com/lpgeekbrasil"><img
+                        src="https://cdn.discordapp.com/attachments/978050756630433792/1124429623984390204/Captura-de-tela_20230630_205259.png"
+                        alt="Imagem 3" /></a>
+            </div>
+            <p>Ajude-nos enviando um PIX para silas.1992@live.com!</p>
+        </div>
+    </footer>
+
+    <script async src="../../../pop-up-script.js"></script>
+
+    <div id="popup" class="popup">
+        <span class="close">&times;</span>
+        <a href="#" target="_blank"><img id="popup-image" src="" /></a>
+    </div>
+
+</body>
+
+</html>

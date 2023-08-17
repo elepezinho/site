@@ -122,7 +122,7 @@ h2 {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .post a {
@@ -154,11 +154,14 @@ h2 {
 }
 
 .post-title {
-    text-decoration: none;
-    /* Remove o sublinhado */
-    color: #fff;
-    /* Define a cor do texto do título */
+    text-decoration: none; /* Remove o sublinhado */
+    color: #000000; /* Define a cor do texto do título */
     /* Adicione outros estilos desejados, como font-weight, font-size, etc. */
+}
+
+.post img {
+max-width: 100%;
+height: auto;
 }
 
 .read-more {
