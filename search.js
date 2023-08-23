@@ -1,5 +1,11 @@
 const data = [
   {
+    title: "TODOS OS DETALHES DA TÉCNICA MÁXIMA NO GUIA OFICIAL DE JUJUTSU KAISEN!!!",
+    content: "Explicação sobre o que é a técnica máxima no mangá...",
+    link: "https://geekbrasil.club/post.html-id=28.html",
+    image: "https://cdn.idntimes.com/content-images/community/2023/01/maximum-uzumaki-anime-cropped-75-56965fbaa68adf470a17cc45ea5d328d-90a4a917b40107defc981d7019f8132d.png"
+  },
+  {
     title: "CARTA DO TABATA PARA TRANSFERÊNCIA DE BLACK CLOVER PARA JUMP GIGA!!!",
     content: "Carta do Tabata falando sobre a transferência de Black Clover para revista Jump Giga...",
     link: "https://geekbrasil.club/post.html-id=27.html",
@@ -30,7 +36,7 @@ const data = [
     image: "https://areajugones.sport.es/wp-content/uploads/2021/10/jujutsu-kaisen-0-rika.jpg"
   },
   {
-    title: "FICHA DO KUSAKABE E DETALHES SOBRE DOMÍNIO SIMPLES, AMPLIFICAÇÃO E EMOÇÃO DA PÉTALA DECADENTE",
+    title: "FICHA DO KUSAKABE E DETALHES SOBRE DOMÍNIO SIMPLES, AMPLIFICAÇÃO E EMOÇÃO DA PÉTALA DECADENTE NO GUIA OFICIAL DE JUJUTSU KAISEN",
     content: "Conheça a ficha do Kusakabe no guia oficial de Jujutsu Kaisen e todos os detalhes do domínio simples e amplificado e da emoção da pétala decadente...",
     link: "https://geekbrasil.club/post.html-id=22.html",
     image: "https://staticc.sportskeeda.com/editor/2023/05/6faf5-16841821614320-1920.jpg"
