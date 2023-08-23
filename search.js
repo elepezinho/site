@@ -206,18 +206,19 @@ function displayResults(results) {
     resultsContainer.appendChild(resultItem);
   });
 }
-
 const searchInput = document.getElementById("searchInput");
+const resultsContainer = document.getElementById("searchResults");
 
 searchInput.addEventListener("input", () => {
   const query = searchInput.value;
-  const resultsContainer = document.getElementById("searchResults");
+  const results = search(query);
 
-  if (query === "") {
-    resultsContainer.innerHTML = "";
+  if (query === "" || results.length === 0) {
+    resultsContainer.innerHTML = ""; // Limpa os resultados anteriores
+    resultsContainer.style.display = "none"; // Oculta o resultado se a pesquisa estiver vazia ou não houver resultados
     return;
   }
 
-  const results = search(query);
   displayResults(results);
+  resultsContainer.style.display = "block"; // Exibe o resultado quando houver resultados válidos
 });

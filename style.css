@@ -117,6 +117,30 @@ h2 {
     display: none;
 }
 
+@media (max-width: 600px) {
+
+    .carousel {
+        height: 200px
+    }
+
+    .carousel .title {
+        font-size: 14px;
+        bottom: 0%;
+    }
+
+    .carousel .prev {
+        left: 0px;
+        top: 40%;
+        /* Ajuste a posição vertical conforme necessário */
+    }
+
+    .carousel .next {
+        right: 0px;
+        top: 40%;
+        /* Ajuste a posição vertical conforme necessário */
+    }
+}
+
 .post {
     background-color: #fff;
     border-radius: 5px;
@@ -159,22 +183,29 @@ h2 {
 }
 
 .post content {
-    text-decoration: none; /* Remove o sublinhado */
-    color: #000000; /* Define a cor do texto do título */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    color: #000000;
+    /* Define a cor do texto do título */
     /* Adicione outros estilos desejados, como font-weight, font-size, etc. */
 }
 
 .post img {
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .read-more {
     display: inline-block;
-    margin-top: 10px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #dbd7d7;
+    border: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #555;
+    color: #fff;
 }
 
 #load-more-button {
@@ -185,7 +216,6 @@ height: auto;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 #load-more-button:hover {
@@ -295,3 +325,4 @@ height: auto;
     .popup img {
         max-height: 500px;
     }
+}
