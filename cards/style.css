@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    background-image: url('https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+h2 {
+    margin: 0;
+    line-height: .5;
+}
+
+.brand-logo {
+    /* Estilos personalizados para o logo */
+    display: inline-block;
+    width: 100px;
+    /* Ajuste a largura conforme necessário */
+    height: 60px;
+    /* Ajuste a altura conforme necessário */
+    background-image: url(https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png);
+    /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+}
+
+.material {
+    display: inline-block;
+    background-image: url(https://media.discordapp.net/attachments/978050756630433792/1120445193301274695/-menu_89847.png);
+    /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
+    width: 45px;
+    /* Ajuste a largura conforme necessário */
+    height: 50px;
+    /* Ajuste a altura conforme necessário */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+}
+
+.custom-navbar {
+    background-color: #333;
+    /* Altere para a cor desejada */
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    margin-top: 1%;
+}
+
+.social-icons img {
+    width: 4rem;
+    margin-right: 10px;
+}
+
+/* Responsividade do Footer */
+@media (max-width: 600px) {
+    .container-footer {
+        padding-top: 2%;
+    }
+
+    .container-footer p {
+        margin-top: 10px;
+        margin-left: 0;
+        font-size: 70%;
+    }
+
+    .social-icons img {
+        width: 2rem;
+
+    }
+}
+
+.container-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.container-banner a {
+    width: 49%;
+}
+
+.container-banner a img {
+    max-width: 100%;
+    /* Adicione esta linha para que a imagem não exceda a largura do link */
+}
+
+@media (max-width: 600px) {
+    .container-banner a {
+        width: 80%;
+        margin-top: 3%;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.popup img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: red;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .popup {
+        padding: 5px;
+    }
+
+    .popup img {
+        max-height: 500px;
+    }
+}

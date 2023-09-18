@@ -1,5 +1,36 @@
 const data = [
   {
+    title: "KIZARU VIVRE CARD COMPLETO!!!",
+    content: "Veja com detalhes o Vivre Card do Kizaru de One Piece...",
+    link: "https://geekbrasil.club/post.html-id=33.html",
+    image: "https://criticalhits.com.br/wp-content/uploads/2018/10/Kizaru.jpg"
+  },
+
+  {
+    title: "REVELADA A IMAGEM DA FRUTA DO ENEL E DA PERONA!!! Extra One Piece",
+    content: "Finalmente foi revelada a aparência das frutas de Enel e Perona...",
+    link: "https://geekbrasil.club/post.html-id=32.html",
+    image: "https://pm1.aminoapps.com/6204/40033305d8b2c6649bcf1cb1d8291fc995dadcd3_hq.jpg"
+  },
+  {
+    title: "BLACK CLOVER CAPÍTULO 01",
+    content: "O começo da grande lenda daquele que se tornará o grande rei mago...",
+    link: "https://geekbrasil.club/post.html-id=31.html",
+    image: "https://cdn.discordapp.com/attachments/978050756630433792/1145047256270110780/thumbnew.jpg"
+  },
+  {
+    title: "VIVRE CARD JINBE EDIÇÃO WANO",
+    content: "Vivre Card edição de Wano do Jinbe com todos os detalhes da sua chegada na grande guerra...",
+    link: "https://geekbrasil.club/post.html-id=30.html",
+    image: "https://pbs.twimg.com/media/FXUrqbrWAAE6fQf.jpg"
+  },
+  {
+    title: "LUFFY VIVRE CARD 01!",
+    content: "Todos os detalhes da primeira edição do Vivre Card do Luffy no mangá de One Piece...",
+    link: "https://geekbrasil.club/post.html-id=29.html",
+    image: "https://www.themarysue.com/wp-content/uploads/2022/03/luffy-one-piece.jpg"
+  },
+  {
     title: "TODOS OS DETALHES DA TÉCNICA MÁXIMA NO GUIA OFICIAL DE JUJUTSU KAISEN!!!",
     content: "Explicação sobre o que é a técnica máxima no mangá...",
     link: "https://geekbrasil.club/post.html-id=28.html",
