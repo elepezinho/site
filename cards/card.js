@@ -10,6 +10,17 @@ function filterImagesByColor(color) {
     });
 }
 
+function filterImagesByDeck(deck) {
+    const imageCards = document.querySelectorAll('.image-card');
+    imageCards.forEach(card => {
+        if (card.getAttribute('data-deck') === deck) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
 function filterImagesByType(type) {
     const imageCards = document.querySelectorAll('.image-card');
     imageCards.forEach(card => {

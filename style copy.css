@@ -18,43 +18,124 @@ header {
     margin-bottom: 30px;
 }
 
-h1 {
-    margin: 0;
-    font-size: 32px;
-}
+
 
 h2 {
     margin: 0;
     line-height: .5;
 }
 
-.brand-logo {
-    /* Estilos personalizados para o logo */
-    display: inline-block;
-    width: 100px;
-    /* Ajuste a largura conforme necessário */
-    height: 60px;
-    /* Ajuste a altura conforme necessário */
-    background-image: url(https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png);
-    /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
+.carousel {
+    max-width: 800px;
+    margin: 30px auto 30px;
+    overflow: hidden;
+    position: relative;
 }
 
-.material {
+.carousel-container {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel .slide {
+    display: none;
+}
+
+.carousel .slide.active {
+    display: block;
+}
+
+.carousel img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carousel .prev {
+    left: 10px;
+}
+
+.carousel .next {
+    right: 10px;
+}
+
+.carousel .title {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+
+    .carousel {
+        height: 200px
+    }
+
+    .carousel .title {
+        font-size: 14px;
+        bottom: 0%;
+    }
+
+    .carousel .prev {
+        left: 0px;
+        top: 40%;
+        /* Ajuste a posição vertical conforme necessário */
+    }
+
+    .carousel .next {
+        right: 0px;
+        top: 40%;
+        /* Ajuste a posição vertical conforme necessário */
+    }
+}
+
+.read-more {
     display: inline-block;
-    background-image: url(https://media.discordapp.net/attachments/978050756630433792/1120445193301274695/-menu_89847.png);
-    /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
-    width: 45px;
-    /* Ajuste a largura conforme necessário */
-    height: 50px;
-    /* Ajuste a altura conforme necessário */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #dbd7d7;
+    border: none;
+    border-radius: 5px;
+}
+
+.read-more:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+#load-more-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#load-more-button:hover {
+    background-color: #555;
 }
 
 .custom-navbar {

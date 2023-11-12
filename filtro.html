@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Cards</title>
+</head>
+
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  width: calc(33.33% - 20px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.card-text {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+</style>
+
+<body>
+  <div class="card-container" id="searchResults"></div>
+
+  <script>
+    const data = [
+    {
+    title: "TODOS OS DETALHES DA TÉCNICA MÁXIMA NO GUIA OFICIAL DE JUJUTSU KAISEN!!!",
+    content: "Explicação sobre o que é a técnica máxima no mangá...",
+    link: "https://geekbrasil.club/post.html-id=28.html",
+    image: "https://cdn.idntimes.com/content-images/community/2023/01/maximum-uzumaki-anime-cropped-75-56965fbaa68adf470a17cc45ea5d328d-90a4a917b40107defc981d7019f8132d.png"
+  },
+    {
+    title: "TODOS OS DETALHES DA TÉCNICA MÁXIMA NO GUIA OFICIAL DE JUJUTSU KAISEN!!!",
+    content: "Explicação sobre o que é a técnica máxima no mangá...",
+    link: "https://geekbrasil.club/post.html-id=28.html",
+    image: "https://cdn.idntimes.com/content-images/community/2023/01/maximum-uzumaki-anime-cropped-75-56965fbaa68adf470a17cc45ea5d328d-90a4a917b40107defc981d7019f8132d.png"
+  },
+    {
+    title: "TODOS OS DETALHES DA TÉCNICA MÁXIMA NO GUIA OFICIAL DE JUJUTSU KAISEN!!!",
+    content: "Explicação sobre o que é a técnica máxima no mangá...",
+    link: "https://geekbrasil.club/post.html-id=28.html",
+    image: "https://cdn.idntimes.com/content-images/community/2023/01/maximum-uzumaki-anime-cropped-75-56965fbaa68adf470a17cc45ea5d328d-90a4a917b40107defc981d7019f8132d.png"
+  },
+       {
+    title: "TODOS OS DETALHES DA TÉCNICA MÁXIMA NO GUIA OFICIAL DE JUJUTSU KAISEN!!!",
+    content: "Explicação sobre o que é a técnica máxima no mangá...",
+    link: "https://geekbrasil.club/post.html-id=28.html",
+    image: "https://cdn.idntimes.com/content-images/community/2023/01/maximum-uzumaki-anime-cropped-75-56965fbaa68adf470a17cc45ea5d328d-90a4a917b40107defc981d7019f8132d.png"
+  },
+  {
+    title: "CARTA DO TABATA PARA TRANSFERÊNCIA DE BLACK CLOVER PARA JUMP GIGA!!!",
+    content: "Carta do Tabata falando sobre a transferência de Black Clover para revista Jump Giga...",
+    link: "https://geekbrasil.club/post.html-id=27.html",
+    image: "https://criticalhits.com.br/wp-content/uploads/2021/09/tumblr_pgowtbfs511xjvcs9o1_1280.png"
+  },
+  {
+    title: "TODOS OS DETALHES DO DEDO DO SUKUNA!!!",
+    content: "Conheça todos os detalhes do dedo Sukuna revelados na Weekly Shonen Giga de 2020...",
+    link: "https://geekbrasil.club/post.html-id=26.html",
+    image: "https://cdn.discordapp.com/attachments/978050756630433792/1139591478457413803/latest.png"
+  },
+    {
+    title: "FICHA DA RIKA GUIA OFICIAL DE JUJUTSU KAISEN",
+    content: "Veja a ficha completa de Rika Orimoto do guia oficial do mangá de Jujutsu Kaisen...",
+    link: "https://geekbrasil.club/post.html-id=23.html",
+    image: "https://areajugones.sport.es/wp-content/uploads/2021/10/jujutsu-kaisen-0-rika.jpg"
+  },
+    {
+    title: "FICHA DO KUSAKABE E DETALHES SOBRE DOMÍNIO SIMPLES, AMPLIFICAÇÃO E EMOÇÃO DA PÉTALA DECADENTE NO GUIA OFICIAL DE JUJUTSU KAISEN",
+    content: "Conheça a ficha do Kusakabe no guia oficial de Jujutsu Kaisen e todos os detalhes do domínio simples e amplificado e da emoção da pétala decadente...",
+    link: "https://geekbrasil.club/post.html-id=22.html",
+    image: "https://staticc.sportskeeda.com/editor/2023/05/6faf5-16841821614320-1920.jpg"
+  },
+
+    ];
+
+    function displayResults(results) {
+      const resultsContainer = document.getElementById("searchResults");
+      resultsContainer.innerHTML = "";
+
+      if (results.length === 0) {
+        resultsContainer.innerHTML = "Nenhum resultado encontrado.";
+        return;
+      }
+
+      results.forEach(result => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <a href="${result.link}">
+            <img class="card-image" src="${result.image}" alt="${result.title}">
+          </a>
+          <div class="card-content">
+            <h4 class="card-title"><a href="${result.link}">${result.title}</a></h4>
+            <p class="card-text">${result.content}</p>
+          </div>
+        `;
+        resultsContainer.appendChild(card);
+      });
+    }
+
+    // Filtrar e exibir automaticamente os resultados com o título "Guia Oficial de Jujutsu Kaisen"
+    document.addEventListener("DOMContentLoaded", () => {
+      const results = data.filter(item =>
+        item.title.toLowerCase().includes("Guia Oficial de Jujutsu Kaisen".toLowerCase())
+      );
+      displayResults(results);
+    });
+  </script>
+</body>
+</html>
