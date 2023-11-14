@@ -10,17 +10,21 @@ body {
     background-attachment: fixed;
 }
 
+.background-link {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
     margin-bottom: 30px;
-}
-
-h1 {
-    margin: 0;
-    font-size: 32px;
 }
 
 h2 {
@@ -53,34 +57,6 @@ h2 {
     cursor: pointer;
 }
 
-.brand-logo {
-    /* Estilos personalizados para o logo */
-    display: inline-block;
-    width: 100px;
-    /* Ajuste a largura conforme necessário */
-    height: 60px;
-    /* Ajuste a altura conforme necessário */
-    background-image: url(https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png);
-    /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
-}
-
-.material {
-    display: inline-block;
-    background-image: url(https://media.discordapp.net/attachments/978050756630433792/1120445193301274695/-menu_89847.png);
-    /* Substitua 'caminho/para/a/imagem' pelo caminho correto para a imagem do logo */
-    width: 45px;
-    /* Ajuste a largura conforme necessário */
-    height: 50px;
-    /* Ajuste a altura conforme necessário */
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-decoration: none;
-}
 
 .carousel .prev,
 .carousel .next {
@@ -141,71 +117,21 @@ h2 {
     }
 }
 
-.post {
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin-bottom: 30px;
-}
-
-.post a {
-    margin: 0;
-    text-decoration: none;
-    color: #333;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.post p {
-    margin-top: 10px;
-    line-height: 1.5;
-}
-
-.post .date {
-    color: #999;
-    font-size: 14px;
-}
-
-.post .thumbnail img {
-    width: 200px;
-    height: auto;
-    border-radius: 3px;
-    margin-right: 10px;
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-}
-
-.post .content {
-    color: #000;
-    font-size: 15px;
-}
-
-.post content {
-    text-decoration: none;
-    /* Remove o sublinhado */
-    color: #000000;
-    /* Define a cor do texto do título */
-    /* Adicione outros estilos desejados, como font-weight, font-size, etc. */
-}
-
-.post img {
-    max-width: 100%;
-    height: auto;
-}
-
 .read-more {
     display: inline-block;
     padding: 10px 20px;
     background-color: #dbd7d7;
     border: none;
     border-radius: 5px;
+    z-index: 5;
+    position: relative;
 }
 
 .read-more:hover {
     background-color: #555;
     color: #fff;
+    z-index: 5;
+    position: relative;
 }
 
 #load-more-button {
@@ -216,6 +142,8 @@ h2 {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 3;
+    position: relative;
 }
 
 #load-more-button:hover {
@@ -225,6 +153,7 @@ h2 {
 .custom-navbar {
     background-color: #333;
     /* Altere para a cor desejada */
+    z-index: 1;
 }
 
 .container-footer {
@@ -234,11 +163,15 @@ h2 {
     background-color: #333;
     color: #fff;
     margin-top: 1%;
+    z-index: 3;
+    position: relative;
 }
 
 .social-icons img {
     width: 4rem;
     margin-right: 10px;
+    z-index: 3;
+    position: relative;
 }
 
 /* Responsividade do Footer */
@@ -265,6 +198,8 @@ h2 {
     align-items: center;
     margin: auto;
     margin-top: 2%;
+    z-index: 3;
+    position: relative;
 }
 
 .container-banner a {

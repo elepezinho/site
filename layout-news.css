@@ -2,15 +2,15 @@
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 5px;
     margin-bottom: 30px;
     width: calc(33% - 20px); /* Defina a largura desejada, considere a margem */
     box-sizing: border-box; /* Inclui a largura da borda e do preenchimento no cálculo da largura total */
     display: inline-block; /* Exibe os cards em linha */
     margin: 5px;
+    color: #000;
+    z-index: 4;
     position: relative;
-    z-index: 2;
-    /* Um valor maior que -1 para garantir que fique acima do link de fundo */
 }
 
 .post a {
@@ -23,7 +23,6 @@
 
 .post p {
     margin-top: 10px;
-    line-height: 1.5;
 }
 
 .post .date {
@@ -44,6 +43,7 @@
 .post .content {
     color: #000;
     font-size: 15px;
+    margin: 0;
 }
 
 .post content {
@@ -58,6 +58,12 @@
     max-width: 100%;
     height: auto;
 }
+
+.post-title {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
 
 /* Ajuste para dispositivos móveis */
 @media (max-width: 768px) {

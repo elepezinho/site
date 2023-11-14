@@ -3,20 +3,22 @@ document.addEventListener('DOMContentLoaded', function () {
     var instances = M.Sidenav.init(elems);
 
     const menuItems = [
-        { label: "  ", link: "http://geekbrasil.club/" },
-        { label: "News", link: "https://geekbrasil.club/midia-kit.html" },
-        { label: "Mangás", link: "https://geekbrasil.club/mangas/mangas.html" },
-        { label: "Quiz", link: "https://geekbrasil.club/quiz/quiz.html" },
-        { label: "Mídia Kit", link: "https://geekbrasil.club/midia-kit.html" },
+        { label: "  ", link: "index.html" },
+        { label: "News", link: "news.html" },
+        { label: "Games", link: "game.html" },
+        { label: "Mangás", link: "mangas/mangas.html" },
+        { label: "Quiz", link: "quiz/quiz.html" },
+        { label: "Mídia Kit", link: "#" },
         { label: "Shop", link: "#" },
     ];
 
     const menuMobile = [
-        { label: "Home", link: "http://geekbrasil.club/" },
-        { label: "News", link: "https://geekbrasil.club/midia-kit.html" },
-        { label: "Mangás", link: "https://geekbrasil.club/mangas/mangas.html" },
-        { label: "Quiz", link: "https://geekbrasil.club/quiz/quiz.html" },
-        { label: "Mídia Kit", link: "https://geekbrasil.club/midia-kit.html" },
+        { label: "Home", link: "index.html" },
+        { label: "News", link: "news.html" },
+        { label: "Games", link: "game.html" },
+        { label: "Mangás", link: "mangas/mangas.html" },
+        { label: "Quiz", link: "quiz/quiz.html" },
+        { label: "Mídia Kit", link: "#" },
         { label: "Shop", link: "#" },
     ];
 

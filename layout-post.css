@@ -4,13 +4,13 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 30px;
-    width: calc(33% - 20px); /* Defina a largura desejada, considere a margem */
+    width: 90%; /* Defina a largura desejada, considere a margem */
     box-sizing: border-box; /* Inclui a largura da borda e do preenchimento no cálculo da largura total */
     display: inline-block; /* Exibe os cards em linha */
-    margin: 5px;
+    margin: auto;
+    color:#000;
     position: relative;
-    z-index: 2;
-    /* Um valor maior que -1 para garantir que fique acima do link de fundo */
+    z-index: 1;
 }
 
 .post a {
@@ -19,10 +19,10 @@
     color: #333;
     font-size: 24px;
     cursor: pointer;
+    margin: auto;
 }
 
 .post p {
-    margin-top: 10px;
     line-height: 1.5;
 }
 
@@ -36,10 +36,6 @@
     height: auto;
     object-fit: cover;
 }
-
-.post:hover {
-    transform: translateY(-5px);
-  }
 
 .post .content {
     color: #000;
