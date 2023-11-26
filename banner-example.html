@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #mobile-banner {
+            position: relative;
+            height: 200vh;
+            /* Aumentei a altura para simular mais conteúdo rolável */
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
+
+        #mobile-banner img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 20%;
+            left: 0;
+            transform: translateZ(0);
+            transition: transform 0.3s ease-out;
+            z-index: 1;
+        }
+
+        #parallax-text {
+            position: absolute;
+            top: 60%;
+            left: 5%;
+            right: 5%;
+            color: #fff;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner visível apenas na versão mobile -->
+    <div id="mobile-banner">
+        <a id="banner-link" href="#" class="background-link" target="_blank">
+            <!-- Adicione aqui o código HTML para o seu banner mobile -->
+            <img id="mobile-banner-image" alt="Mobile Banner">
+        </a>
+        <!-- Adicione um texto para testar o efeito de rolagem -->
+        <div id="parallax-text">Texto Grande para Testar o Efeito de Rolagem</div>
+    </div>
+
+    <script>
+        function isMobile() {
+            // Lógica simples para verificar se a largura da tela é menor que 768 pixels
+            return window.innerWidth < 768;
+        }
+
+        function changeBanner() {
+            // Array com as URLs das imagens de banner mobile
+            var images = [
+                "https://cdn.discordapp.com/attachments/978050756630433792/1174096332642865183/background-jjk.jpg",
+                "https://cdn.discordapp.com/attachments/978050756630433792/1174797571189903390/Captura_de_tela_20231116_194537.png",
+                // Adicione mais URLs de imagens conforme necessário
+            ];
+
+            // Array com os links correspondentes a cada banner mobile
+            var ads = [
+                "https://amzn.to/49AXTL2",
+                "https://amzn.to/49JJZqe",
+                // Adicione mais URLs de links conforme necessário
+            ];
+
+            // Seleciona aleatoriamente uma imagem e seu respectivo link
+            var randomIndex = Math.floor(Math.random() * images.length);
+
+            // Atualiza o link no elemento <a> com a classe "background-link"
+            var link = document.getElementById("banner-link");
+            link.href = ads[randomIndex];
+
+            // Atualiza a imagem no elemento <img> com o id "mobile-banner-image"
+            var mobileBannerImage = document.getElementById("mobile-banner-image");
+            mobileBannerImage.src = images[randomIndex];
+
+            // Exibe ou oculta o banner com base no tipo de dispositivo
+            var mobileBanner = document.getElementById("mobile-banner");
+            mobileBanner.style.display = isMobile() ? "block" : "none";
+        }
+
+        // Chama a função quando a página é carregada e sempre que é atualizada
+        window.onload = changeBanner;
+        window.onbeforeunload = changeBanner;
+    </script>
+</body>
+
+</html>

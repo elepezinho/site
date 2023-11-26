@@ -2,14 +2,14 @@ function changeBackground() {
     // Array com as URLs das imagens de fundo
     var images = [
         "https://cdn.discordapp.com/attachments/978050756630433792/1174096332642865183/background-jjk.jpg",
-        "https://cdn.discordapp.com/attachments/978050756630433792/1174096332642865183/background-jjk.jpg",
+        "https://media.discordapp.net/attachments/978050756630433792/1175150509427011686/background-op.jpg",
 
     ];
 
     // Array com os links correspondentes a cada imagem de fundo
     var ads = [
         "https://amzn.to/49AXTL2",
-        "https://amzn.to/49AXTL2",
+        "https://amzn.to/49JJZqe",
     ];
 
     // Seleciona aleatoriamente uma imagem de fundo e seu respectivo link

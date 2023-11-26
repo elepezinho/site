@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0px;
     color: #fff;
     background-image: url('https://cdn.discordapp.com/attachments/978050756630433792/1130631224231206982/background.jpg');
     background-repeat: no-repeat;
@@ -261,3 +261,53 @@ h2 {
         max-height: 500px;
     }
 }
+
+    /* Estilos para o banner na versão desktop */
+    @media (min-width: 768px) {
+        #mobile-banner {
+          display: none;
+          /* Oculta o banner */
+        }
+      }
+  
+      #mobile-banner {
+        position: relative;
+        /* Aumentei a altura para simular mais conteúdo rolável */
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+  
+      #mobile-banner img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 0%;
+        /* Ajuste para garantir espaço entre a imagem e o texto */
+        left: 0;
+        transform: translateZ(0);
+        transition: transform 0.3s ease-out;
+        z-index: 1;
+        position: relative;
+      }
+
+      .image-container {
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container a {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .image-container img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }

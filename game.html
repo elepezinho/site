@@ -13,6 +13,7 @@
       href="https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png"
       type="image/png">
   <meta charset="UTF-8">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 
   <link rel="canonical" href="game.html" />
   <meta property="og:locale" content="pt_BR" />
@@ -38,6 +39,13 @@
 
 <body>
 
+        <!-- Banner visível apenas na versão mobile-->
+        <div id="mobile-banner">
+          <a id="banner-link" href="#" class="banner-link" target="_blank">
+            <img id="mobile-banner-image" alt="Mobile Banner">
+          </a>
+        </div>
+
   <script data-ad-client="ca-pub-1493186259985891" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <nav>
@@ -58,9 +66,13 @@
 
   <div class="card-container" id="searchResults"></div>
 
-  <script src="background.js"></script>
+  <script src="background-game.js"></script>
 
   <a id="background-link" href="#" class="background-link" target="_blank"></a>
+
+  <script>
+      window.onload = changeBackground;
+  </script>
 
   <script>
     // Ao carregar a página, chama a função para trocar o background
@@ -85,6 +97,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script async src="menu.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script async src="banner-game.js"></script>
 
 </body>
 </html>

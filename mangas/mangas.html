@@ -1,145 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" />
-    <link href="../style.css" rel="stylesheet"type="text/css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1493186259985891" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png" type="image/png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="../style.css" />
+    <link type="text/css" rel="stylesheet" href="../search.css" />
+    <link type="text/css" rel="stylesheet" href="../menu.css" />
+    <link type="text/css" rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1493186259985891"
+        crossorigin="anonymous"></script>
+    <link rel="shortcut icon"
+        href="https://cdn.discordapp.com/attachments/989088411371573248/1120115850196811806/geekizinho.png"
+        type="image/png">
+    <meta charset="UTF-8">
+
+    <link rel="canonical" href="mangas/mangas.html" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="mangas/mangas.html" />
+    <meta property="og:site_name" content="Clube Geek Brasil" />
+    <meta property="article:publisher" content="https://www.facebook.com/geekbrasiloficial" />
+    <meta property="article:author" content="https://www.facebook.com/silasreis.lp" />
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/attachments/978050756630433792/1173711934386868274/logo.jpg" />
+    <meta property="og:image:width" content="728" />
+    <meta property="og:image:height" content="381" />
+    <meta property="fb:app_id" content="298493643588638" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image"
+        content="https://cdn.discordapp.com/attachments/978050756630433792/1173711934386868274/logo.jpg" />
+    <meta name="twitter:creator" content="@lpgeekbrasil" />
+    <meta name="twitter:site" content="@lpgeekbrasil" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CLUB GEEK BRASIL | MANGÁS</title>
-    <style>
-		.image-container {
-		margin: 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .image-container a {
-            display: block;
-            margin-bottom: 20px;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-    </style>
+    <title>MANGÁS | CLUB GEEK BRASIL!</title>
 </head>
+
 <body>
 
-<script data-ad-client="ca-pub-1493186259985891" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- Banner visível apenas na versão mobile-->
+  <div id="mobile-banner">
+    <a id="banner-link" href="#" class="banner-link" target="_blank">
+      <img id="mobile-banner-image" alt="Mobile Banner">
+    </a>
+  </div>
 
-<nav class="custom-navbar">
-    <div class="nav-wrapper">
-        <a href="http://geekbrasil.club/" class="brand-logo"></a>
-        <a href="#" data-activates="menu-mobile" class="button-collapse">
-            <i class="material"></i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-                    <li><a href="http://geekbrasil.club/">Home</a></li>
-                    <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
-                    <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
-                    <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
+    <script data-ad-client="ca-pub-1493186259985891" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="../index.html" class="brand-logo"></a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger">
+                <div class="menu-icon"></div>
+            </a>
+            <div class="right-side">
+                <ul id="desktop-menu">
                 </ul>
-                <ul class="side-nav" id="menu-mobile">
-                    <li><a href="http://geekbrasil.club/">Home</a></li>
-                    <li><a href="https://geekbrasil.club/mangas/mangas.html">Mangás</a></li>
-                    <li><a href="https://geekbrasil.club/quiz/quiz.html">Quiz</a></li>
-                    <li><a href="https://geekbrasil.club/midia-kit.html">Mídia Kit</a></li>
-                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-menu">
+    </ul>
+
+    <div class="container-search">
+
+        <input type="text" id="searchInput" placeholder="Digite sua pesquisa">
+        <div id="searchResults" style="display: none;"></div>
     </div>
-</nav>
+
+    <script src="../background.js"></script>
+
+    <a id="background-link" href="#" class="background-link" target="_blank"></a>
+
+    <script>
+        window.onload = changeBackground;
+    </script>
 
 <div class="image-container">
-        <a href="black-clover/black-clover.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO6eLhQ23LgmN21espWby60kLkUvOBpzEEbUIjwqooXngqG3CZw0IhUnQ3Ge2cU6aXswZ7KVyxHm6EMUvPNnDmswvGSAHqwyA5xLp1DpEWOWVHji9o9D3oo_zt_QBwEkfWVzdacV5a465vIwnyLWoEshe-BEKCIHT_Dn99lMlkT1OvE2g9MaYBRAv1/w640-h124/site-bc.jpg" alt="Black Clover"></a>
-        <a href="bleach/bleach.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglmOIRN6b17xjrL27Uzh9ACT0IXvbEC9zeIJl0JMxXwmBg3qZPuazw9jDMkkPhEkyLa9BGcNcvDgU7GLhXmI6SlHFIu8XplawTtNppuXXIBkUCIPWV91qJZk9z4aLrLoE7FkicjZKWFfaPaQchsi6sdBCGuQn_PdwGBgHH0qNhpe9aYry8PRwfj7xT/w640-h124/site-blc.jpg" alt="Bleach"></a>
-        <a href="boku-no-hero/boku-no-hero.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHh5zqN-db_n9VYPzpZbhUgz5KZ6xTISFkigueF02F3gVJqmCgAmecw-HcM5fQZrqB5La9DDpbKP1SzpQgEQNnvPd1NIfO5h7Tb1O9tnq7A8IJoOiM7R_VNg39euLz3E_HpFEoM3i3rdsHOgbMT8XCR52kxAd9n3sxD9dk3et76AC9mDVASBG-2mIo/w640-h124/site-bnh.jpg" alt="Boku no Hero"></a>
-        <a href="chainsaw-man/chainsaw-man.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ_w6-zsuEJo-39z_gpWXf34klcU-BLmbcEDd4RRZqu9zmrcLXU_Ouv16oVRvDfLa3kyggLc7xliiwVr4BOqwiRoVMyRPJIdXQKx5dhTulbp9flzW2zNhP9gwdYYdLAeoe5r-DZJX2Wb_7DQU_XTHFy21I4_N4yukbXc1p7ym2-56lu2CsosBmhlFY/w640-h124/site-csm.jpg" alt="Chainsaw Man"></a>
-        <a href="demon-slayer/demon-slayer.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKZ7wPzKx_D1MYgA0YmSo8Ie6RNTsW4UEjFRyJqrNcgXaPJhNAafJskx3QiuI2m0582PmIurFATor2fefF_jYV6IT0wjlC2JynhO8Vbr6azdQWEd8ITxPvirIzkW4b8gP6_I0ssQjOtjaC-tEiWHYhHSD8fV_ApeGy531AE8veYXSLkeJrGkQo_1yo/w640-h124/site-ds.jpg" alt="Demon Slayer"></a>
-        <a href="hunter-x-hunter/hunter-x-hunter.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbA3MVcNYWoBMbVwZYn9pkls3eZmwsoLaZIOmoyjLx1qblQmd_mlqFpP0eUtEPedrp826pUlPF8aXIimVHBPAF_K6qt8I0frfEU1DzLndCu91f1X5he2eK9wbQOJ73IACcI41B7Nn-LC1LZGAXGlDanbVLgZhXLgAHdW9ujrxdLnVRzlQvBQ1ceuFG/w640-h124/site-hxh.jpg" alt="Hunter x Hunter"></a>
-        <a href="jujutsu-kaisen/jujutsu-kaisen.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkWVQAJEvKSqLQ22BslWWadwjRxDTseZfe8UeJ7kEMUkavO5UHYUZnwOZ-voj4UA8jFhgW-qcZV2PI57pegCBGfEsdW5zkUqmpcje6S_syMQXrMYwVH9J8TfLR2_VEZgpTw1Y6yoX0jNRaddgMyiqL0IGl_9JXkoTGXP2pWaMeFmygh5L6tp2nyvyT/w640-h124/site-jjk.jpg" alt="Jujutsu kaisen"></a>
-        <a href="naruto-e-boruto/naruto-e-boruto.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-uOda32G7dgQhf8CGTqJzzG90Ssr7uEXxkUk3nkDdikuxe-9SoCEkrJ-sxlucTuR_x6p2-E0cqbunDrcBpsMth-JrXyE3Xxjs3jCbdzXxEF5-i0GqZnN1YfHVaPvY_GuJY89irXsN6x4EYkB207RKopn9mkC14X-v1MN3UlYqvQrKbkINC1UnbmPa/w640-h124/site-nrt.jpg" alt="Naruto e Boruto"></a>
-        <a href="one-piece/one-piece.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR6QAzZd4kGrpl7HuFB8LYZ1TkPnarrWoafjWrxutKVitVwyCs9X2yWCB0W2Ar_fI_XmDuglzSO5imCKXplYJE_sIw1AfVBclHnk4TORbM-T6hYgLIgYNcPfOykFvzUqYg6jLMYoBonfeve7gmOc6W5gEeh6YNtk5u0H0GMASTFn0Llfd_kROKQs2t/w640-h124/site-op.jpg" alt="One Piece"></a>
-        <a href="one-punch-man/one-punch-man.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3bDSJwZAHcfuBVjmvaFROgmjmExeSZk36CgwI1bIdQKdxrkyF1S3sWcSZCK4gKtxCrW6RoTg-Wt-iszp3jWrxDqHoRo_BF9vpL3oVEf-eZELeaUWMJAtXc1AA4VWj3ZnnyucDe_uLteq5ZPACtc-VWS0ZDhGVE3Fv_0vbSW4UqDNg9_el-PzVQmWc/w640-h124/site-opm.jpg" alt="One Punch Man"></a>
-        <a href="shuumatsu-no-valkyrie/shuumatsu-no-valkyrie.html"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNfR7k5QRGdpS_QKgPEm8sWIHodV_RETdDxWUFOxYLTB8kq9uzOYGjWbKcn3QldG7m7CGTgKtbpBrZv5aAgkj3eFLnGQA4fEZc0wc66RcHN8y_XFgJrNj0aUzcDhKgzYxowaDAEU2qgmyHHhF117eHZ1UvmIzhVaUqb8fvIqrNv5lkB4htmCUl0t0z/w640-h124/site-snv.jpg" alt="Shuumatsu no Valkyrie"></a>
-    </div>
-
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
-<script>
-    $(function () {
-        $(".button-collapse").sideNav();
-    });
-</script>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
-
-<script>
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-        apiKey: "AIzaSyCwu0bmTUPKqe4gCrcahlzDeMAw0E_X7Xs",
-        authDomain: "clubgeekbrasil-76840.firebaseapp.com",
-        projectId: "clubgeekbrasil-76840",
-        storageBucket: "clubgeekbrasil-76840.appspot.com",
-        messagingSenderId: "486124051009",
-        appId: "1:486124051009:web:9aff154ad79a8ec0a944c0",
-        measurementId: "G-GHFWNYXHB9"
-    };
-
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-</script>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GHFWNYXHB9"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-GHFWNYXHB9');
-</script>
-
-<div class="container-banner">
-    <a href="https://tapas.io/series/Que-Haja-Luz/info" target="_blank">
-        <img src="https://cdn.discordapp.com/attachments/978050756630433792/1125426126567788654/divulg.jpg" alt="">
-    </a>
+    <a href="black-clover/black-clover.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO6eLhQ23LgmN21espWby60kLkUvOBpzEEbUIjwqooXngqG3CZw0IhUnQ3Ge2cU6aXswZ7KVyxHm6EMUvPNnDmswvGSAHqwyA5xLp1DpEWOWVHji9o9D3oo_zt_QBwEkfWVzdacV5a465vIwnyLWoEshe-BEKCIHT_Dn99lMlkT1OvE2g9MaYBRAv1/w640-h124/site-bc.jpg" alt="Black Clover"></a>
+    <a href="bleach/bleach.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEglmOIRN6b17xjrL27Uzh9ACT0IXvbEC9zeIJl0JMxXwmBg3qZPuazw9jDMkkPhEkyLa9BGcNcvDgU7GLhXmI6SlHFIu8XplawTtNppuXXIBkUCIPWV91qJZk9z4aLrLoE7FkicjZKWFfaPaQchsi6sdBCGuQn_PdwGBgHH0qNhpe9aYry8PRwfj7xT/w640-h124/site-blc.jpg" alt="Bleach"></a>
+    <a href="boku-no-hero/boku-no-hero.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHh5zqN-db_n9VYPzpZbhUgz5KZ6xTISFkigueF02F3gVJqmCgAmecw-HcM5fQZrqB5La9DDpbKP1SzpQgEQNnvPd1NIfO5h7Tb1O9tnq7A8IJoOiM7R_VNg39euLz3E_HpFEoM3i3rdsHOgbMT8XCR52kxAd9n3sxD9dk3et76AC9mDVASBG-2mIo/w640-h124/site-bnh.jpg" alt="Boku no Hero"></a>
+    <a href="chainsaw-man/chainsaw-man.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJ_w6-zsuEJo-39z_gpWXf34klcU-BLmbcEDd4RRZqu9zmrcLXU_Ouv16oVRvDfLa3kyggLc7xliiwVr4BOqwiRoVMyRPJIdXQKx5dhTulbp9flzW2zNhP9gwdYYdLAeoe5r-DZJX2Wb_7DQU_XTHFy21I4_N4yukbXc1p7ym2-56lu2CsosBmhlFY/w640-h124/site-csm.jpg" alt="Chainsaw Man"></a>
+    <a href="demon-slayer/demon-slayer.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiKZ7wPzKx_D1MYgA0YmSo8Ie6RNTsW4UEjFRyJqrNcgXaPJhNAafJskx3QiuI2m0582PmIurFATor2fefF_jYV6IT0wjlC2JynhO8Vbr6azdQWEd8ITxPvirIzkW4b8gP6_I0ssQjOtjaC-tEiWHYhHSD8fV_ApeGy531AE8veYXSLkeJrGkQo_1yo/w640-h124/site-ds.jpg" alt="Demon Slayer"></a>
+    <a href="hunter-x-hunter/hunter-x-hunter.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbA3MVcNYWoBMbVwZYn9pkls3eZmwsoLaZIOmoyjLx1qblQmd_mlqFpP0eUtEPedrp826pUlPF8aXIimVHBPAF_K6qt8I0frfEU1DzLndCu91f1X5he2eK9wbQOJ73IACcI41B7Nn-LC1LZGAXGlDanbVLgZhXLgAHdW9ujrxdLnVRzlQvBQ1ceuFG/w640-h124/site-hxh.jpg" alt="Hunter x Hunter"></a>
+    <a href="jujutsu-kaisen/jujutsu-kaisen.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhkWVQAJEvKSqLQ22BslWWadwjRxDTseZfe8UeJ7kEMUkavO5UHYUZnwOZ-voj4UA8jFhgW-qcZV2PI57pegCBGfEsdW5zkUqmpcje6S_syMQXrMYwVH9J8TfLR2_VEZgpTw1Y6yoX0jNRaddgMyiqL0IGl_9JXkoTGXP2pWaMeFmygh5L6tp2nyvyT/w640-h124/site-jjk.jpg" alt="Jujutsu kaisen"></a>
+    <a href="naruto-e-boruto/naruto-e-boruto.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh-uOda32G7dgQhf8CGTqJzzG90Ssr7uEXxkUk3nkDdikuxe-9SoCEkrJ-sxlucTuR_x6p2-E0cqbunDrcBpsMth-JrXyE3Xxjs3jCbdzXxEF5-i0GqZnN1YfHVaPvY_GuJY89irXsN6x4EYkB207RKopn9mkC14X-v1MN3UlYqvQrKbkINC1UnbmPa/w640-h124/site-nrt.jpg" alt="Naruto e Boruto"></a>
+    <a href="one-piece/one-piece.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgR6QAzZd4kGrpl7HuFB8LYZ1TkPnarrWoafjWrxutKVitVwyCs9X2yWCB0W2Ar_fI_XmDuglzSO5imCKXplYJE_sIw1AfVBclHnk4TORbM-T6hYgLIgYNcPfOykFvzUqYg6jLMYoBonfeve7gmOc6W5gEeh6YNtk5u0H0GMASTFn0Llfd_kROKQs2t/w640-h124/site-op.jpg" alt="One Piece"></a>
+    <a href="one-punch-man/one-punch-man.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3bDSJwZAHcfuBVjmvaFROgmjmExeSZk36CgwI1bIdQKdxrkyF1S3sWcSZCK4gKtxCrW6RoTg-Wt-iszp3jWrxDqHoRo_BF9vpL3oVEf-eZELeaUWMJAtXc1AA4VWj3ZnnyucDe_uLteq5ZPACtc-VWS0ZDhGVE3Fv_0vbSW4UqDNg9_el-PzVQmWc/w640-h124/site-opm.jpg" alt="One Punch Man"></a>
+    <a href="shuumatsu-no-valkyrie/shuumatsu-no-valkyrie.html"><img style="position: relative; z-index: 1;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhNfR7k5QRGdpS_QKgPEm8sWIHodV_RETdDxWUFOxYLTB8kq9uzOYGjWbKcn3QldG7m7CGTgKtbpBrZv5aAgkj3eFLnGQA4fEZc0wc66RcHN8y_XFgJrNj0aUzcDhKgzYxowaDAEU2qgmyHHhF117eHZ1UvmIzhVaUqb8fvIqrNv5lkB4htmCUl0t0z/w640-h124/site-snv.jpg" alt="Shuumatsu no Valkyrie"></a>
 </div>
 
-<footer>
-    <div class="container-footer">
-        <div class="social-icons">
-            <a target="_blank" href="https://www.youtube.com/channel/UC4d8uyKbO5mYVWitioK0u9g/"><img
-                    src="https://cdn.discordapp.com/attachments/978050756630433792/1124429740443451563/b.png"
-                    alt="Imagem 3" /></a>
 
-            <a target="_blank" href="https://twitter.com/lpgeekbrasil"><img
-                    src="https://cdn.discordapp.com/attachments/978050756630433792/1124429623984390204/Captura-de-tela_20230630_205259.png"
-                    alt="Imagem 3" /></a>
+    <li style="display: none;">
+        <center>
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- Amazon01 -->
+            <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1493186259985891"
+                data-ad-slot="4122947454" data-ad-format="auto" data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </center>
+    </li>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+ https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyCwu0bmTUPKqe4gCrcahlzDeMAw0E_X7Xs",
+            authDomain: "clubgeekbrasil-76840.firebaseapp.com",
+            projectId: "clubgeekbrasil-76840",
+            storageBucket: "clubgeekbrasil-76840.appspot.com",
+            messagingSenderId: "486124051009",
+            appId: "1:486124051009:web:9aff154ad79a8ec0a944c0",
+            measurementId: "G-GHFWNYXHB9"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GHFWNYXHB9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GHFWNYXHB9');
+    </script>
+
+    <div class="container-banner">
+        <a href="https://tapas.io/series/Que-Haja-Luz/info" target="_blank">
+            <img src="https://cdn.discordapp.com/attachments/978050756630433792/1125426126567788654/divulg.jpg" alt="">
+        </a>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <div class="social-icons">
+                <a target="_blank" href="https://www.youtube.com/channel/UC4d8uyKbO5mYVWitioK0u9g/"><img
+                        src="https://cdn.discordapp.com/attachments/978050756630433792/1124429740443451563/b.png"
+                        alt="Imagem 3" /></a>
+
+                <a target="_blank" href="https://twitter.com/lpgeekbrasil"><img
+                        src="https://cdn.discordapp.com/attachments/978050756630433792/1124429623984390204/Captura-de-tela_20230630_205259.png"
+                        alt="Imagem 3" /></a>
+            </div>
+            <p>Ajude-nos enviando um PIX para silas.1992@live.com!</p>
         </div>
-        <p>Ajude-nos enviando um PIX para silas.1992@live.com!</p>
-    </div>
-</footer>
+    </footer>
 
-<script async src="../pop-up-script.js"></script>
-
-<div id="popup" class="popup">
-    <span class="close">&times;</span>
-    <a href="#" target="_blank"><img id="popup-image" src="" /></a>
-</div>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script async src="../menu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script async src="../search-1.js"></script>
+    <script async src="../banner.js"></script>
 </body>
 
-</body>
 </html>
